@@ -44,6 +44,10 @@ Route::get('/pdelete/category/{id}', [\App\Http\Controllers\CategoryController::
 
 //Supplier
 Route::get('/supplier/all', [\App\Http\Controllers\SupplierController::class, 'allSupplier'])->name('all.suppliers');
+Route::post('/supplier/add', [SupplierController::class, 'StoreSupplier'])->name('store.supplier');
+Route::get('/supplier/edit/{id}', [SupplierController::class, 'EditSupp']);
+Route::post('/supplier/update/{id}', [SupplierController::class, 'UpdateSupp']);
+Route::get('/supplier/delete/{id}', [SupplierController::class, 'DeleteSupp']);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
