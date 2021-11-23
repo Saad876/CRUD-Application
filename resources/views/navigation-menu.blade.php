@@ -22,7 +22,7 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('all.category') }}" :active="request()->routeIs('all.category')">
+                    <x-jet-nav-link href="{{ route('all.suppliers') }}" :active="request()->routeIs('all.category')">
                         {{ __('All Suppliers') }}
                     </x-jet-nav-link>
                 </div>
